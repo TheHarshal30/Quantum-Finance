@@ -27,18 +27,27 @@ Click here to download the dataset.
 <br>
 
 ## Methodology:
-Our solution consists of two parts: <br>
-<ul>
--Using <strong> Quantum Neural Networks </strong> for predcting fare prices. <br>
--Using <strong>Ising model</strong> for optimal discount prediction.
-</ul>
+<img align="right" src="Qlayers.png" width="320" height="200">
+
+- Converting Classical data into Quantum Data : <br>
+   We convert all the classical data into a circuit. <br>
+   The encoder used here is:<br>
+   RX * (pi * i)<br>
+   RY * (pi * i)<br>
+   where i belongs to [0,1] (i.e normalized data). <br>
+- Quantum Layers : <br>
+   A layer consists of CNOT gate followed by RY and RZ gates <br>
+- Model : <br>
+    We create the Quantum model using Google's Cirq. <br>
+    We know that, the number of parameters is 2 paramenters per Qubit multiplied by depth of circuit.<br>
 <br>
 <br>
 <br>
 
-<img align="right" src="outputQNN.png" width="350" height="200"> 
 
 ##  Conclusion:
+<img align="right" src="outputQNN.png" width="350" height="200"> 
+
 Even with small number of epochs and short circuit depth the loss is pretty good. <br>
 Implementing the code on Quantum Hardware with high number of epoches and large circuit depths would result in great accuracies in very less time.
 
