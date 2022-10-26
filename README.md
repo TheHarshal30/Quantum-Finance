@@ -1,9 +1,18 @@
 <div align="center"> 
+  <h1>Quantum Dynamic Pricing</h1>
+
+  </div>
+<div align="center"> 
 
    ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
    ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
    
-</div>
+</div> 
+<div align="center"> 
+  <img src="res/dynamic.png" height=300>
+ </div> 
+
+<br>
 
 ## Context
 Pricing is very strategic and it makes a big difference in how a business operates. Many businesses operate on a fixed pricing model comes with serious drawbacks. It relies on fickle buyers who are price sensitive. This makes you more vulnerable to price wars. If one of your competitors drops their prices, your buyers are at risk of jumping ship. Also fixed-price model throttles long-term relationships. You don’t have time to connect with customers.<br>
@@ -27,7 +36,7 @@ Click here to download the dataset.
 <br>
 
 ## Methodology:
-<img align="right" src="Qlayers.png" width="320" height="200">
+<img align="right" src="res/Qlayers.png" width="320" height="200">
 
 - Converting Classical data into Quantum Data : <br>
    We convert all the classical data into a circuit. <br>
@@ -40,13 +49,17 @@ Click here to download the dataset.
 - Model : <br>
     We create the Quantum model using Google's Cirq. <br>
     We know that, the number of parameters is 2 paramenters per Qubit multiplied by depth of circuit.<br>
+- Optimal Discount Pricing : <br>
+   We also made a Optimal Discount Pricing Engine using Dwave's Simulated Annealing Sampler.(Ising Model) <br>
+   We have demonstrated the results using sample data for ease of understanding. <br> 
+   
 <br>
 <br>
 <br>
 
 
 ##  Conclusion:
-<img align="right" src="outputQNN.png" width="350" height="200"> 
+<img align="right" src="res/outputQNN.png" width="350" height="200"> 
 
 Even with small number of epochs and short circuit depth the loss is pretty good. <br>
 Implementing the code on Quantum Hardware with high number of epoches and large circuit depths would result in great accuracies in very less time.
@@ -54,13 +67,21 @@ Implementing the code on Quantum Hardware with high number of epoches and large 
 
 ## TechStack Used:
 <ul>
-1. Python <br />
-2. Scikitlearn <br />
-3. Numpy <br />
-4. Pandas <br />
-5. Tensorflow Quantum  <br />
-6. Dwave Systems<br />
-7. Cirq <br>
+<li>
+Cirq
+</li>
+<li>
+Tensorflow Quantum
+</li>
+<li>
+Dwave Systems
+</li>
+<li>
+Pandas
+</li>
+<li>
+Numpy
+</li>
 </ul>
 
 
