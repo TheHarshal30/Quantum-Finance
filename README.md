@@ -38,18 +38,19 @@ Click here to download the dataset.
 ## Methodology:
 <img align="right" src="res/Qlayers.png" width="320" height="200">
 
-- Converting Classical data into Quantum Data : <br>
-   We convert all the classical data into a circuit. <br>
-   The encoder used here is:<br>
-   RX * (pi * i)<br>
-   RY * (pi * i)<br>
-   where i belongs to [0,1] (i.e normalized data). <br>
-- Quantum Layers : <br>
-   A layer consists of CNOT gate followed by RY and RZ gates <br>
-- Model : <br>
-    We create the Quantum model using Google's Cirq. <br>
-    We know that, the number of parameters is 2 paramenters per Qubit multiplied by depth of circuit.<br>
-- Optimal Discount Pricing : <br>
+- [Dynamic Price Prediction](https://github.com/TheHarshal30/Quantum-Finance/blob/main/Quantum%20Neural%20Network/QNN.ipynb) : 
+  - Converting Classical data into Quantum Data : <br>
+     We convert all the classical data into a circuit. <br>
+     The encoder used here is:<br>
+     RX * (pi * i)<br>
+     RY * (pi * i)<br>
+     where i belongs to [0,1] (i.e normalized data). <br>
+  - Quantum Layers : <br>
+     A layer consists of CNOT gate followed by RY and RZ gates <br>
+  - Model : <br>
+      We create the Quantum model using Google's Cirq. <br>
+      We know that, the number of parameters is 2 paramenters per Qubit multiplied by depth of circuit.<br>
+- [Optimal Discount Pricing](https://github.com/TheHarshal30/Quantum-Finance/blob/main/Quantum%20Neural%20Network/discountp.ipynb) : <br>
    We also made a Optimal Discount Pricing Engine using Dwave's Simulated Annealing Sampler.(Ising Model) <br>
    We have demonstrated the results using sample data for ease of understanding. <br> 
    
